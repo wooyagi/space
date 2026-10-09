@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>우주 기업 비즈니스 모델</title><link rel="stylesheet" href="../assets/style.css">
+<style>
+.bm{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.bm summary{cursor:pointer;padding:14px 16px;list-style:none;display:grid;grid-template-columns:auto auto 1fr;gap:4px 10px;align-items:baseline}
+.bm summary::-webkit-details-marker{display:none}
+.bm .nm{font-weight:800;font-size:16px}.bm .tk{font:700 11px var(--mono);color:var(--muted)}
+.bm .ty{justify-self:end;font:700 11px var(--mono);color:var(--accent)}
+.bm .df{grid-column:1/-1;font-size:13px;color:var(--muted)}
+.bm[open] summary{border-bottom:1px solid var(--line)}
+.bm dl{margin:0;padding:6px 16px 14px;display:grid;grid-template-columns:96px 1fr;gap:10px 14px}
+.bm dt{font:700 11px var(--mono);color:var(--accent);padding-top:3px;text-transform:uppercase}
+.bm dt.rk{color:var(--bad)}
+.bm dd{margin:0;font-size:13.5px}
+@media(max-width:560px){.bm dl{grid-template-columns:1fr;gap:2px}.bm dd{margin-bottom:8px}}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;margin:8px 0}.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+</style></head>
+<body>
+<div class="hero"><div class="wrap">
+<a class="back" href="../">← 우주 산업 스터디</a>
+<div class="eyebrow">Study 02 · Business Models</div>
+<h1>우주 기업은 어떻게 돈을 버는가</h1>
+<p>같은 우주 기업이라도 돈 버는 방식은 완전히 다르다. 과금 방식과 고객 구조가 마진과 매출 가시성을 결정한다. 미국 18개사의 BM을 유형별로 비교.</p>
+<div class="asof">기준일 2026-10-09 · 미국 기업 18개사</div>
+</div></div>
+<main>
+<div class="toc"><a href="#t1">핵심 시사점</a><a href="#t2">BM 유형</a><a href="#t3">매출 구성</a><a href="#t4">기업별 BM</a></div>
+
+<div class="summary"><b>한 줄 결론</b> · 지금 흑자·고마진인 곳은 <b>통신 구독</b>(Starlink, Iridium)과 <b>부품 납품</b>(Karman)이다. 발사·위성제조·달 사업은 정부 고정가 계약 위주라 가시성은 높지만 마진이 얇고 EAC(원가 재산정) 조정 위험이 크다. 2026년 M&amp;A는 모두 '제조·발사 → 구독 서비스' 방향이다.</div>
+
+<h2 id="t1"><span class="n">01 TAKEAWAYS</span>핵심 시사점</h2>
+<div class="grid">
+<div class="card"><b>① 수직통합 M&amp;A</b><ul><li>Rocket Lab→Iridium(EV 약 $8B), Amazon→Globalstar(약 $11.6B), Intuitive Machines→Lanteris($800M).</li><li>프리미엄은 반복 매출과 스펙트럼에 붙는다.</li></ul></div>
+<div class="card"><b>② 단일고객의 양면</b><ul><li>York는 SDA, Globalstar는 Apple에 집중.</li><li>가시성은 높지만 계약 변경 한 번에 York 2026 가이던스가 약 30% 하향됐다.</li></ul></div>
+<div class="card"><b>③ 구독형 EO 흑자 전환</b><ul><li>Planet(조정 EBITDA 흑자, 현금 $865M), BlackSky(첫 조정 EBITDA 흑자, GM 약 73%).</li></ul></div>
+<div class="card"><b>④ 발사는 '케이던스'가 돈</b><ul><li>SpaceX는 재사용으로 원가 약 $15M vs 가격 $74M(추정). 소형·신형은 발사 횟수와 신뢰성이 관건.</li></ul></div>
+</div>
+
+<h2 id="t2"><span class="n">02 MODEL TYPES</span>BM 유형별 비교</h2>
+<p class="lead">기업 카드의 유형 코드(A~I)와 연결된다.</p>
+<div class="tw"><table>
+<tr><th>유형</th><th>매출 가시성</th><th>마진</th><th>자본집약도</th><th>대표 기업</th></tr>
+<tr><td><b>A 통신 구독</b><br>월정액·ARPU</td><td class="pos">높음 (반복)</td><td>GM 60%+, EBITDA 50~60%</td><td>매우 높음 (완성 후 저CAPEX)</td><td>Starlink, Iridium, Viasat, (Amazon Leo·AST 미래형)</td></tr>
+<tr><td><b>B 도매 용량·로밍</b><br>수익분배</td><td>중~높음 (단일고객 집중)</td><td>EBITDA 약 40% (Globalstar)</td><td>높음 (앵커가 CAPEX 일부 상환)</td><td>Globalstar(Apple), AST(MNO 60+)</td></tr>
+<tr><td><b>C EO 데이터 구독</b></td><td class="pos">높음 (Planet 반복 ACV 98%)</td><td>GM 57~73%, EBITDA 흑자 전환 초기</td><td>중 (위성 교체 CAPEX)</td><td>Planet, BlackSky</td></tr>
+<tr><td><b>D 발사 건당</b></td><td>중 (실패·일정 변동)</td><td>재사용 시 매우 높음, 소형은 중간</td><td>높음</td><td>SpaceX, Rocket Lab, Firefly, Blue Origin</td></tr>
+<tr><td><b>E 정부 고정가·마일스톤</b></td><td>높음 (단 lumpy)</td><td class="neg">GM 15~30%, EAC 조정 변동</td><td>중</td><td>York, Intuitive Machines, Firefly, Rocket Lab 위성, Blue Origin HLS</td></tr>
+<tr><td><b>F 정부 비용+·프라임</b></td><td class="pos">매우 높음</td><td>영업마진 약 10%</td><td>낮음</td><td>L3Harris, Viasat DAT, Voyager, IM(OMES)</td></tr>
+<tr><td><b>G 부품 납품</b><br>PO·LTA</td><td>중~높음</td><td>GM 28~43% (Karman 최고)</td><td>낮~중</td><td>Karman, Redwire, Rocket Lab 부품</td></tr>
+<tr><td><b>H 좌석 판매</b></td><td class="neg">낮음 (예약금은 비행 후 인식)</td><td>모델상 높음, 미실현</td><td>높음</td><td>Virgin Galactic</td></tr>
+<tr><td><b>I 플랫폼 미래형</b></td><td class="neg">매우 낮음 (정부 보조 의존)</td><td class="neg">적자</td><td>극단적</td><td>Voyager Starlab, AST(상용 전)</td></tr>
+</table></div>
+
+<h2 id="t3"><span class="n">03 REVENUE MIX</span>매출 구성 비교</h2>
+<p class="lead">회사별 가장 최근 공시 기준. 기준 기간과 분류 체계가 달라 비중만 비교한다.</p>
+<figure class="fig"><svg viewBox="0 0 640 250" role="img" aria-label="회사별 매출 구성">
+<g font-size="12" fill="currentColor">
+<text x="0" y="25" font-weight="700">SpaceX 2025</text>
+<rect x="150" y="10" width="274" height="24" fill="#3b6cff"/><rect x="424" y="10" width="99" height="24" fill="#6b8dff"/><rect x="523" y="10" width="77" height="24" fill="#a99bff"/>
+<text x="156" y="26" fill="#fff" font-size="11">Starlink 61%</text><text x="430" y="26" fill="#fff" font-size="11">Space 22%</text><text x="527" y="26" fill="#fff" font-size="11">AI 17%</text>
+<text x="0" y="65" font-weight="700">Rocket Lab 2Q26</text>
+<rect x="150" y="50" width="365" height="24" fill="#3b6cff"/><rect x="515" y="50" width="85" height="24" fill="#6b8dff"/>
+<text x="156" y="66" fill="#fff" font-size="11">Space Systems 81%</text><text x="521" y="66" fill="#fff" font-size="11">발사 19%</text>
+<text x="0" y="105" font-weight="700">Iridium 2Q26</text>
+<rect x="150" y="90" width="266" height="24" fill="#3b6cff"/><rect x="416" y="90" width="54" height="24" fill="#6b8dff"/><rect x="470" y="90" width="86" height="24" fill="#a99bff"/><rect x="556" y="90" width="44" height="24" fill="#c9c2ff"/>
+<text x="156" y="106" fill="#fff" font-size="11">상업서비스 59%</text><text x="420" y="106" fill="#fff" font-size="11">정부12</text><text x="474" y="106" fill="#fff" font-size="11">엔지니어링 19%</text><text x="560" y="106" fill="#333" font-size="11">장비9</text>
+<text x="0" y="145" font-weight="700">Globalstar 2Q26</text>
+<rect x="150" y="130" width="279" height="24" fill="#3b6cff"/><rect x="429" y="130" width="171" height="24" fill="#a99bff"/>
+<text x="156" y="146" fill="#fff" font-size="11">Apple 등 도매용량 62%</text><text x="435" y="146" fill="#fff" font-size="11">SPOT·IoT·기타 38%</text>
+<text x="0" y="185" font-weight="700">Karman 2Q26</text>
+<rect x="150" y="170" width="158" height="24" fill="#3b6cff"/><rect x="308" y="170" width="108" height="24" fill="#6b8dff"/><rect x="416" y="170" width="104" height="24" fill="#a99bff"/><rect x="520" y="170" width="80" height="24" fill="#c9c2ff"/>
+<text x="154" y="186" fill="#fff" font-size="11">전술미사일 35%</text><text x="312" y="186" fill="#fff" font-size="11">극초음속 24%</text><text x="420" y="186" fill="#fff" font-size="11">우주·발사 23%</text><text x="524" y="186" fill="#333" font-size="11">해양 18%</text>
+<text x="0" y="225" font-weight="700">Redwire 2Q26</text>
+<rect x="150" y="210" width="212" height="24" fill="#3b6cff"/><rect x="362" y="210" width="238" height="24" fill="#a99bff"/>
+<text x="156" y="226" fill="#fff" font-size="11">Space 47%</text><text x="368" y="226" fill="#fff" font-size="11">Defense Tech(드론) 53%</text>
+</g></svg>
+<figcaption>Firefly는 우주선 92%·발사 8%이나 세그먼트 공시가 아닌 콜 요약 기준이어서 차트에서는 제외하고 아래 카드에 적었다. 항목 구분은 각사 공시 분류를 그대로 따랐다.</figcaption></figure>
+
+<h2 id="t4"><span class="n">04 COMPANIES</span>기업별 BM</h2>
+<p class="lead">카드를 눌러 펼친다. 유형 코드는 02의 A~I.</p>
+<details class="bm"><summary><span class="nm">SpaceX</span><span class="tk">SPCX</span><span class="ty">A·D·E</span><span class="df">발사(Falcon/Starship) + 위성통신(Starlink) + AI(xAI 합병)를 묶은 수직통합 기업.</span></summary>
+<dl><dt>매출원</dt><dd>2025 매출 $18.7B: Starlink(Connectivity) $11.4B(61%), Space $4.1B(22%), AI $3.2B(17%). 영업손실 -$2.6B, 조정 EBITDA $6.58B. 발사 단독 매출은 분리 공시 안 됨(확인 못 함).</dd><dt>과금 방식</dt><dd>Starlink 월정액(미 주거용 $55/$85/$130, 2026.5 인상). ARPU $99(2023)→$66(2026.3). 가입자 1,030만(2026.3). Falcon 9 리스트가 $74M, 라이드셰어 약 $7,000/kg(2차). NASA HLS 등 고정가·마일스톤, NSSL 임무당 계약, Starshield.</dd><dt>고객</dt><dd>미 정부가 2025 매출의 약 1/5(xAI·X 포함 기준). 2025 NSSL 12건 중 11건 수행. 사실상 최대 &#x27;내부 고객&#x27;은 Starlink(Falcon 발사의 약 2/3, 2차).</dd><dt>단위경제</dt><dd>Starlink 영업이익률 약 39%(조정 EBITDA 약 63%). Space 세그먼트는 영업손실 -$657M(Starship R&amp;D 약 $3B 포함). Falcon 9 내부원가 약 $15M vs 가격 $74M(2차)라 발사 총마진은 높을 것으로 추정. 장기부채 $29.1B.</dd><dt>성장 레버</dt><dd>① 가입자×ARPU(항공·해양·D2C로 방어) ② Starship 상용화 ③ Starshield·Golden Dome</dd><dt class="rk">약점·리스크</dt><dd>ARPU 3년간 -33%, Amazon Leo 경쟁, Starship 지연 시 적자 장기화.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Rocket Lab</span><span class="tk">RKLB</span><span class="ty">D·E·G</span><span class="df">소형발사(Electron/HASTE), 중형 Neutron 개발, 위성 제조·부품. Iridium 인수로 서비스까지 확장 중.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $234M(+62%): Space Systems $189.5M(81%), Launch $44.6M(19%). FY25 매출 $601.8M, 순손실 -$198.2M.</dd><dt>과금 방식</dt><dd>Electron 평균 약 $8M대/회. HASTE DoD 20회 $190M(약 $9.5M/회). Neutron 목표가 $50~55M(2023 발언, 2026 재확인은 확인 못 함). 위성은 건당 고정가·마일스톤, 부품은 단가×수량.</dd><dt>고객</dt><dd>백로그 $2.36B(+137%, Launch 40%/Space Systems 60%). 상위 고객 집중도 높음(상위5 백로그 77%, 2차 요약).</dd><dt>단위경제</dt><dd>GAAP 총마진 36.1%(2Q26), 3Q 가이던스 29~31%로 하락(Neutron·인수 믹스). 순손실 -$49.3M. Iridium 편입 시 EBITDA 마진 57% 구독 매출이 합류.</dd><dt>성장 레버</dt><dd>① Neutron 첫 발사·NSSL ② SDA/Golden Dome 위성 ③ Iridium 통합</dd><dt class="rk">약점·리스크</dt><dd>Neutron 지연, 인수 레버리지(브릿지론 $3.6B)와 통합 실행.</dd></dl></details>
+<details class="bm"><summary><span class="nm">AST SpaceMobile</span><span class="tk">ASTS</span><span class="ty">B·I</span><span class="df">일반 스마트폰에 직접 광대역을 제공하는 D2D 위성망(BlueBird) 구축·운영사.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $31.5M: 제품 $24.4M(MNO 게이트웨이 장비) + 서비스 $7.1M(미 정부 마일스톤). 2026 가이던스 $150~200M(4Q 편중). 순손실 -$299.9M(NCI 전).</dd><dt>과금 방식</dt><dd>MNO 도매 &#x27;수익분배&#x27;(비율 비공개, 50/50설은 1차 미확인). 정부 계약 마일스톤(누적 $125M+). 게이트웨이 장비 판매(일회성). 일본 J-LEO 최대 약 $1B 정부자금.</dd><dt>고객</dt><dd>MNO 60개사+(AT&amp;T, Verizon, Vodafone, Rakuten 등, 가입자 합계 30억+). 현재 매출 대부분은 정부 마일스톤+장비.</dd><dt>단위경제</dt><dd>극단적 자본집약: 상반기 CAPEX $859M, 현금 약 $2.7B(7월 CB $1.15B 포함 $3.7B+). 궤도상 13기. 가입자 늘면 한계비용 ≈0인 통신사 구조를 지향.</dd><dt>성장 레버</dt><dd>① 위성 수(45~60기 연속 커버리지) ② AT&amp;T/Verizon 유료 전환·ARPU 공개 ③ 정부·Golden Dome</dd><dt class="rk">약점·리스크</dt><dd>발사 의존(BlueBird 7 손실), 과금구조 미공개로 밸류에이션 검증 불가, Starlink D2C 경쟁.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Planet Labs</span><span class="tk">PL</span><span class="ty">C·E</span><span class="df">매일 지구 전체를 촬영하는 EO 위성군의 데이터·분석 구독, 최근 &#x27;위성서비스(전용 위성 건조·운영)&#x27; 추가.</span></summary>
+<dl><dt>매출원</dt><dd>FY27 2Q 매출 $116.1M(+58%), 반복 ACV 98%. 국방·정보 +90%+(위성서비스 포함), 상업 +15%+, 민간정부 +5%+(비중은 확인 못 함). RPO $753M, 백로그 $815M.</dd><dt>과금 방식</dt><dd>연간 구독(지역·해상도별 티어) + 위성서비스(스웨덴 Pelican, 독일 €25M/5년 등: 건조·인도 시점 또는 기간 인식).</dd><dt>고객</dt><dd>NGA($8M OTA), NRO EOCL, 유럽 국방·정보. 정부 비중이 대부분(추정 70%+), 상업은 성장 둔화.</dd><dt>단위경제</dt><dd>GAAP GM 57%(비GAAP 59%), 조정 EBITDA +$13.9M, YTD FCF +$21.3M, 현금 $865M. 데이터 구독은 한계비용이 낮고 위성 감가가 고정비.</dd><dt>성장 레버</dt><dd>① 유럽 재무장·NATO 위성서비스 ② Pelican/Tanager 신제품 ③ AI 분석 업셀</dd><dt class="rk">약점·리스크</dt><dd>3Q 가이던스 $101~105M·조정 EBITDA 적자 전환(위성서비스 매출 lumpy), 미 정부 예산 의존.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Firefly Aerospace</span><span class="tk">FLY</span><span class="ty">D·E</span><span class="df">Alpha 소형발사 + Blue Ghost 달착륙선 + Elytra 궤도선 + Eclipse 중형발사 개발.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $117.7M: 우주선 $108.3M(92%), 발사 $9.4M(8%). 2026 가이던스 $420~450M, 백로그 $1.5B.</dd><dt>과금 방식</dt><dd>NASA CLPS 임무당 고정가·마일스톤(6번째 Blue Ghost $144M 등), Alpha 건당(Lockheed 최대 25회, 단가 비공개), Space Force $94M, NITE-STAR IDIQ 태스크오더.</dd><dt>고객</dt><dd>공시된 계약 전부 정부·방산. 상업 비중은 작을 것으로 추정(확인 못 함).</dd><dt>단위경제</dt><dd>GM 20.3%, 조정 EBITDA -$61.2M, 순손실 -$92.3M, FCF -$106.3M. 개발형 고정가라 EAC 조정 리스크.</dd><dt>성장 레버</dt><dd>① Alpha 케이던스·Block II ② Eclipse 첫 발사 ③ CLPS·Golden Dome 우주선 표준화</dd><dt class="rk">약점·리스크</dt><dd>Alpha 실패 이력과 발사 비중 8%, 달 임무 단건 리스크(실패 시 마일스톤 미수령).</dd></dl></details>
+<details class="bm"><summary><span class="nm">Intuitive Machines</span><span class="tk">LUNR</span><span class="ty">E·F</span><span class="df">달 착륙(CLPS)·달 데이터 중계(NSNS)·궤도서비스에 Lanteris(옛 Maxar Space Systems) 인수로 위성 제조까지 확대.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $206.2M(전년 $50.3M): 제품 $166.7M, 서비스 $36.7M. 고객군 NASA 38%, 상업 32%, 국가안보 30%. 백로그 $1.76B. 2026 가이던스 $900M~1B.</dd><dt>과금 방식</dt><dd>CLPS 고정가 마일스톤, OMES III 비용+수수료, NSNS 데이터 중계 IDIQ(반복매출 지향), 상업 GEO 위성 3기 $600M+ 고정가, 지상국 서비스.</dd><dt>고객</dt><dd>NASA 최대, 상업 GEO 사업자(Lanteris), 국가안보 30%.</dd><dt>단위경제</dt><dd>GM 약 17.4%(추정), 영업손실 -$47.1M, 조정 EBITDA -$13.8M, 상반기 FCF -$145.8M, 현금 $367M. 위성 제조는 저마진·운전자본 소요, NSNS는 고마진 반복형.</dd><dt>성장 레버</dt><dd>① NSNS 지상국 확충 ② Lanteris 상업·국방 위성 ③ 표준 착륙선</dd><dt class="rk">약점·리스크</dt><dd>착륙 실패 전례(IM-2)·EAC 조정, 인수 통합과 현금 소진.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Voyager Technologies</span><span class="tk">VOYG</span><span class="ty">F·I</span><span class="df">방산·우주 기술(센서·추진)과 상업 우주정거장 Starlab(NASA CLD 파트너) 개발.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $52.7M(+15.5%): Defense &amp; Space Tech $53.2M, Starlab $0. 수주 $113M, 백로그 $335.5M. 2026 가이던스 $275~305M.</dd><dt>과금 방식</dt><dd>정부 개발·생산 계약(고정가/비용+ 혼합), Golden Dome 관련 $84.3M 수주. Starlab은 NASA SAA 마일스톤 자금 + 장래 좌석·서비스 판매(2030 전후, 미실현).</dd><dt>고객</dt><dd>미 정부·프라임(비중 확인 못 함). 상업 매출 소규모.</dd><dt>단위경제</dt><dd>총이익 $4.5M(GM 약 8.5%)로 급락, 조정 EBITDA -$37.5M. Starlab 혁신지출 $24.8M/분기.</dd><dt>성장 레버</dt><dd>① Golden Dome·미사일 방어 센서 ② M&amp;A ③ Starlab 상업화</dd><dt class="rk">약점·리스크</dt><dd>Starlab 자본소요 대비 NASA 예산 불확실, 핵심 사업 마진 급락.</dd></dl></details>
+<details class="bm"><summary><span class="nm">York Space Systems</span><span class="tk">YSS</span><span class="ty">E</span><span class="df">표준 버스 기반 국방 위성 대량 제조·운영. SDA 트랜스포트층 최다 공급자.</span></summary>
+<dl><dt>매출원</dt><dd>FY25 $386M(+52%), 2Q26 $92.5M(+10%). 백로그 $592M. 2026 가이던스 $375~405M(기존 $545~595M에서 대폭 하향: IDIQ 전환·공급망 지연).</dd><dt>과금 방식</dt><dd>장기 고정가 생산계약(위성 건당, 진행률 인식, 원가초과 위험은 회사 부담) + 지상운영·다운링크. 2026부터 IDIQ 태스크오더 확대.</dd><dt>고객</dt><dd>10-K: SDA가 매출·백로그의 실질적 전부. 극단적 집중.</dd><dt>단위경제</dt><dd>2Q26 GM 24%(전년 약 11%), 조정 EBITDA -$9.5M, 상반기 순손실 -$154M(주식보상 $95.6M). 표준 버스 반복 생산으로 학습곡선을 노림.</dd><dt>성장 레버</dt><dd>① SDA Tranche 3/4·Golden Dome ② IDIQ 태스크오더 전환 ③ 상업·해외 다변화</dd><dt class="rk">약점·리스크</dt><dd>단일고객(SDA) 및 예산·조직 변화, 가이던스 30% 하향으로 신뢰 훼손.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Karman Holdings</span><span class="tk">KRMN</span><span class="ty">G</span><span class="df">발사체·미사일·극초음속·잠수함용 구조물·페어링·방열 등 티어1 부품 공급.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $182.1M(+58%, 유기 +24%): 전술미사일·통합방어 35%, 극초음속·전략방어 24%, 우주·발사 23%, 해양방어 18%. 백로그 $1.3B. 2026 가이던스 $730~745M.</dd><dt>과금 방식</dt><dd>구매주문·장기공급계약(LTA) 기반 단가×수량. 약 $1B+ 규모 LTA 3건 협상 중.</dd><dt>고객</dt><dd>150+ 고객·프로그램, 프라임·발사사업자 경유 간접 비중이 큼(비중 확인 못 함).</dd><dt>단위경제</dt><dd>GM 43.0%, 영업이익률 약 19%, 조정 EBITDA 마진 30.0%, 순이익 $14.0M. 2H26은 믹스 변화로 마진 하락 예고. 영업현금 -$4M.</dd><dt>성장 레버</dt><dd>① 미사일·방공 생산 램프 ② 신규 발사체 콘텐츠 ③ 볼트온 M&amp;A</dd><dt class="rk">약점·리스크</dt><dd>발사 일정 변동에 따른 주문 지연, 내부통제 중대 약점(2027 초까지).</dd></dl></details>
+<details class="bm"><summary><span class="nm">Redwire</span><span class="tk">RDW</span><span class="ty">G·E</span><span class="df">우주 부품·서브시스템(태양전지판·카메라·센서) + 우주 플랫폼 + Edge Autonomy 인수로 드론 방산기술 결합.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $117.1M(+89.6%): Space $55.2M(47%), Defense Tech $61.9M(53%). 국가안보 45%·상업 39%·민간우주 15%. 백로그 $542.1M. 2026 가이던스 $450~500M.</dd><dt>과금 방식</dt><dd>부품 단가 납품, 개발 고정가/비용+, 드론 시스템 판매·서비스.</dd><dt>고객</dt><dd>미·유럽 정부와 프라임, 상업 위성 제조사. 지역 미국 58%·유럽 36%.</dd><dt>단위경제</dt><dd>GM 27.8%(전년 음수), 조정 EBITDA -$3.2M. 유동성 $607.8M(증자 $487.9M).</dd><dt>성장 레버</dt><dd>① 드론 수요(유럽) ② 태양전지판·센서 양산 ③ 유럽 방위예산</dd><dt class="rk">약점·리스크</dt><dd>EAC 조정으로 분기 마진 변동, Space 세그먼트 정체.</dd></dl></details>
+<details class="bm"><summary><span class="nm">BlackSky</span><span class="tk">BKSY</span><span class="ty">C</span><span class="df">고재방문 소형 EO 위성군 + AI 분석 플랫폼을 구독으로 판매.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $33.3M(+50%): 위성기반 인텔리전스·AI 서비스 74%, 미션솔루션 $5.1M, 첨단기술 $3.7M. 구독 ARR $100M. 2026 가이던스 $130~150M.</dd><dt>과금 방식</dt><dd>다년 구독(용량·태스킹권), 정부 R&amp;D 계약, 전용 위성 판매·서비스. 국제 다년계약이 펀디드 백로그의 80%+.</dd><dt>고객</dt><dd>NGA, NRO, Space Force, 인도·아시아 등 국제 국방부. 정부 비중은 확인 못 함.</dd><dt>단위경제</dt><dd>GM 약 73%, 조정 EBITDA $4.7M(14.2%), 순손실 -$20.8M, 현금 $244M, 2026 CAPEX $50~60M. 위성 고정비 레버리지가 큼.</dd><dt>성장 레버</dt><dd>① Gen-3 위성 추가 ② 국제 다년계약 ③ AI 분석 업셀</dd><dt class="rk">약점·리스크</dt><dd>소규모·고객집중, Planet·Maxar·Umbra와 경쟁. 백로그 총액은 확인 못 함.</dd></dl></details>
+<details class="bm"><summary><span class="nm">L3Harris (우주 부문)</span><span class="tk">LHX</span><span class="ty">F</span><span class="df">방산 프라임. 위성 페이로드·미사일추적 위성·HBTSS·SDA 추적층 등을 Space &amp; Mission Systems(SMS)로 통합.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 SMS 매출 $2.97B(+7%), 영업이익 $290M(9.8%). FY26 SMS 가이던스 약 $11.7B. 순수 &#x27;우주&#x27; 매출은 분리 공시 없음(확인 못 함).</dd><dt>과금 방식</dt><dd>정부 비용+ 개발, 고정가 생산(SDA 추적층 위성 건당, MDA HBTSS), 기밀 프로그램.</dd><dt>고객</dt><dd>미 정부(SDA, MDA, NRO, Space Force)가 절대 다수.</dd><dt>단위경제</dt><dd>세그먼트 영업마진 약 10%, 안정적 현금흐름. 저마진·고가시성의 전형.</dd><dt>성장 레버</dt><dd>① Golden Dome 추적·요격 위성 ② SDA Tranche 3+ ③ 기밀 우주</dd><dt class="rk">약점·리스크</dt><dd>예산 의존, 비용+ 저마진, 우주 비중의 가시성 낮음.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Iridium</span><span class="tk">IRDM</span><span class="ty">A</span><span class="df">66기 LEO L-band 글로벌 음성·IoT·PNT·항공감시(Aireon) 위성통신 사업자. Rocket Lab 피인수 예정.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $225.2M: 상업서비스 59%(음성·데이터 $58.4M, IoT $47.1M, 광대역 $11.7M, 호스티드 $16.6M), 정부서비스 12%, 엔지니어링·지원 19%, 장비 9%. FY25 매출 $871.7M, EBITDA 약 $495M(57%).</dd><dt>과금 방식</dt><dd>월 ARPU 구독: 음성·데이터 $49, IoT $7.64, 광대역 $243. 미 정부 EMSS 고정 연간요금(2027.3 갱신 예상). 호스티드 페이로드(Aireon) 데이터료, 장비 판매.</dd><dt>고객</dt><dd>과금 가입자 262.7만(+6%, IoT 209만). 미 정부가 최대 단일 고객.</dd><dt>단위경제</dt><dd>영업 EBITDA 마진 52.9%, 분기 CAPEX $21.8M(위성군 완성으로 저CAPEX·고FCF 국면). Aireon 인수로 연 서비스매출 $100M+ 편입.</dd><dt>성장 레버</dt><dd>① IoT 가입자 ② PNT·정부 ③ D2D(NTN), Rocket Lab 통합</dd><dt class="rk">약점·리스크</dt><dd>광대역 ARPU 하락(-8%), Starlink의 해양·항공 침식, 2030년대 차세대 위성군 재투자.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Viasat</span><span class="tk">VSAT</span><span class="ty">A·F</span><span class="df">GEO 위성 광대역(ViaSat-3) + Inmarsat 인수로 항공·해양·정부 통신, 방산 네트워크·암호(DAT).</span></summary>
+<dl><dt>매출원</dt><dd>FY26(2026.3 종료) $4.64B: Communication Services $3.30B(71%), DAT $1.34B(29%). 1Q FY27 백로그 $4.22B(+19%).</dd><dt>과금 방식</dt><dd>항공사 기내Wi-Fi(기당 월정액·데이터량, 4,450대), 해양 NexusWave(선박당 월정액, 1,315척), 주거 광대역 월정액(축소), 정부 satcom, DAT 제품·IP 라이선스.</dd><dt>고객</dt><dd>상업 항공·해운사, 미 정부·동맹군. ARPU 공개는 제한적.</dd><dt>단위경제</dt><dd>조정 EBITDA $381M(약 33%), FCF +$72M, 순레버리지 3.2배. ViaSat-3 CAPEX 사이클 후반. DAT는 전략적 검토 중.</dd><dt>성장 레버</dt><dd>① ViaSat-3 용량 가동 ② 항공 백로그 ③ DAT 분리·매각, L-band D2D</dd><dt class="rk">약점·리스크</dt><dd>Starlink에 고정·해양 점유율 잠식, 고부채.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Globalstar</span><span class="tk">GSAT</span><span class="ty">B</span><span class="df">LEO MSS 사업자. 네트워크 용량 85%를 Apple(iPhone 위성 SOS)에 도매 제공. Amazon 피인수 예정.</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $64.8M: 도매용량 $40.1M(62%), SPOT $8.6M, 상업 IoT $7.5M, Duplex $2.7M, 정부·기타 $1.1M, 장비 $4.8M.</dd><dt>과금 방식</dt><dd>Apple 도매: 용량 사용료 + 네트워크 비용 상환(2024 Apple $1.5B 커밋, 자회사 20% 지분). 소매 월 ARPU: IoT $4.31, SPOT $13.81, Duplex $57.44.</dd><dt>고객</dt><dd>Apple 단일 고객이 매출 60%+. 가입자 80.4만(IoT 58만).</dd><dt>단위경제</dt><dd>조정 EBITDA $26.0M(약 40%), 순손실 -$26.5M(합병 비용). 상반기 CAPEX $208.3M(대부분 Apple 상환 대상). Amazon 인수가 주당 $90, 약 $10.8~11.6B, 2027 종결 예정.</dd><dt>성장 레버</dt><dd>Amazon Leo+Apple D2D 통합(스펙트럼 가치), IoT 활성화</dd><dt class="rk">약점·리스크</dt><dd>단일 고객, 피인수로 독립 성장 스토리 소멸, 조건부 감액 마일스톤 $110M.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Blue Origin (비상장)</span><span class="tk">—</span><span class="ty">D·E</span><span class="df">발사(New Glenn)·엔진(BE-4)·달착륙선(Blue Moon/HLS)·우주선(Blue Ring) 기업. 간략 정리.</span></summary>
+<dl><dt>매출원</dt><dd>2025년 약 $800M, 2026 예상 약 $1.4B, 2030 목표 $30B+(모두 2차·비감사). 구성 비중은 확인 못 함.</dd><dt>과금 방식</dt><dd>발사 건당(Amazon Leo 앵커 최대 27회), NSSL Phase 3 Lane 2 약 $2.4B, NASA HLS $3.4B 고정가 마일스톤, 달 로버 수송 $188M, BE-4 엔진 판매.</dd><dt>고객</dt><dd>Amazon(관계사)·NASA·Space Force/NRO·ULA.</dd><dt>단위경제</dt><dd>Bezos 누적 약 $30B 투입. 2026.9 외부 첫 조달 $10B(밸류 약 $140B, 2차). New Glenn 4월 상단 실패·5월 핫파이어 폭발로 지상 대기. New Shepard 관광은 2년+ 중단.</dd><dt>성장 레버</dt><dd>New Glenn 케이던스·재사용, Amazon Leo 발사, HLS</dd><dt class="rk">약점·리스크</dt><dd>발사 신뢰성·일정, 현금 소진.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Amazon Leo (구 Kuiper)</span><span class="tk">—</span><span class="ty">A</span><span class="df">Amazon의 LEO 광대역 위성망(3,232기 계획). 간략 정리.</span></summary>
+<dl><dt>매출원</dt><dd>상업 서비스 미개시(기업 프리뷰 2025.11, 베타 2026.4). 소비자 가격·가입자 공시 없음. 2026 Leo 관련 비용 YoY +$1B 예상.</dd><dt>과금 방식</dt><dd>(계획) 단말 Nano/Pro/Ultra(100Mbps/400Mbps/1Gbps) + 월정액(Starlink보다 저가 선언). 항공사(Delta 등), 통신사 백홀, DirecTV LatAm, NASA, Apple D2D(Globalstar 연계).</dd><dt>고객</dt><dd>엔터프라이즈·정부 우선, 소비자는 후순위.</dd><dt>단위경제</dt><dd>소비자 단말 제조원가 $400 미만(Amazon 발언). 전체 CAPEX는 수백억 달러 추정이며 공시 없음.</dd><dt>성장 레버</dt><dd>발사 가용성, Globalstar 스펙트럼</dd><dt class="rk">약점·리스크</dt><dd>발사 지연으로 FCC 마일스톤 압박, Starlink가 1,030만 가입자 선점.</dd></dl></details>
+<details class="bm"><summary><span class="nm">Virgin Galactic</span><span class="tk">SPCE</span><span class="ty">H</span><span class="df">준궤도 우주관광(Delta급 우주선, 2027.2 상업 재개 목표).</span></summary>
+<dl><dt>매출원</dt><dd>2Q26 매출 $0.134M(사실상 0). 예약 약 675명, 미래 매출 $203M(6/30)→$240M+(8/12). 순손실 -$55.9M, FCF -$90.7M, 현금 약 $286M.</dd><dt>과금 방식</dt><dd>좌석당 선수금(예약금), 비행 완료 시 인식. $450K/$600K/$750K 트랜치. 연구 페이로드 좌석 판매.</dd><dt>고객</dt><dd>개인 고액자산가, 일부 정부·연구기관.</dd><dt>단위경제</dt><dd>회사 모델: 6인×$600K=$3.6M/비행, 2척 125회/년이면 매출 $450M·조정 EBITDA $90~115M(미실현 시나리오). 3Q·4Q FCF 가이던스 -$95~100M / -$80~90M.</dd><dt>성장 레버</dt><dd>Delta 투입, 월 10회 케이던스 달성</dd><dt class="rk">약점·리스크</dt><dd>반복 지연(4Q26→2027.2), 현금 3분기치로 추가 희석 우려, 안전사고.</dd></dl></details>
+<div class="warn">출처는 SEC 8-K/10-Q/10-K·S-1, 회사 IR, 보도(2026.2~10) 순으로 참고했고 일부 수치는 2차 자료입니다. 비율 계산은 공시 수치를 나눈 추정치입니다. <b>확인 못 한 항목</b>: AST MNO 수익분배율, SpaceX 발사 단독 매출·NASA 비중, Rocket Lab 정부/상업 백로그 비율(1차), BlackSky 백로그 총액, Blue Origin·Amazon Leo 재무 전반(비상장).</div>
+</main>
+<footer>기준일 2026-10-09. 투자 권유가 아닌 학습용 정리입니다.</footer>
+</body></html>
