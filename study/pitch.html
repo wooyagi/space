@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>우주 투자 발표자료</title><link rel="stylesheet" href="../assets/style.css">
+<style>
+.slide{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 32px;margin:22px 0;position:relative;page-break-inside:avoid}
+.slide .no{font:700 11px var(--mono);color:var(--accent);letter-spacing:.12em;margin-bottom:6px}
+.slide h2{margin:0 0 14px;font-size:24px;line-height:1.3;border:0;padding:0}
+.slide h2 .n{display:none}
+.slide .say{font-size:16px;font-weight:700;margin:0 0 14px;padding:12px 16px;border-left:4px solid var(--accent);background:color-mix(in srgb,var(--accent) 8%,transparent);border-radius:0 10px 10px 0}
+.slide ul{margin:8px 0;padding-left:20px;font-size:14.5px}.slide li{margin:6px 0}
+.slide .src{margin-top:14px;font-size:11.5px;color:var(--muted);line-height:1.5}.slide .src a{color:var(--muted)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.box{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14px}.box b{display:block;margin-bottom:6px;font-size:14.5px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0;font-size:13.5px}
+.flow span{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 12px}.flow span.hot{border-color:var(--bad);font-weight:700}.flow i{color:var(--muted);font-style:normal}
+.cmp td,.cmp th{font-size:13px;padding:7px 10px;vertical-align:top}.cmp td:first-child{font-weight:700;white-space:nowrap}
+.mx td,.mx th{font-size:12.5px;padding:6px 9px;vertical-align:top}.mx td:nth-child(5){min-width:170px}.mx td:nth-child(2){min-width:130px}.mx td.tk{font-weight:800;white-space:nowrap}
+.g{color:var(--good)}.b{color:var(--bad)}
+.tag2{display:inline-block;font:700 10.5px var(--mono);padding:2px 7px;border-radius:999px;white-space:nowrap}
+.t-ok{background:rgba(18,128,92,.15);color:var(--good)}.t-mid{background:rgba(224,121,63,.18);color:#c2410c}.t-no{background:rgba(194,65,12,.18);color:var(--bad)}
+.fix{border-color:#e0793f}.fix .no{color:#e0793f}
+.fb td{font-size:13px;padding:7px 10px;vertical-align:top}
+</style></head>
+<body>
+<div class="hero"><div class="wrap">
+<a class="back" href="../">← 우주 산업 스터디</a>
+<div class="eyebrow">Study 08 · Investor Pitch</div>
+<h1>우주: 돈의 방향 → 돈이 닿는 산업 → 이익이 지속되는 주도주</h1>
+<p>AI 사이클을 읽던 방식 그대로 우주 산업을 읽는다. 발표용 14장. 모든 수치는 1차 출처 또는 전문 매체 보도로 확인했고, 확인 못 한 것은 그렇게 적었다.</p>
+<div class="asof">기준일 2026-10-16 · 출처: FAA 연방관보, FCC 명령, SEC(SpaceX S-1·Rocket Lab 8-K), Space Capital 3Q26, EchoStar IR, Breaking Defense, Light Reading, Via Satellite, 모건스탠리 노트 보도, 회사 IR · 자체 스터디 03·04·07</div>
+</div></div>
+<main>
+<div class="toc"><a href="#s1">결론</a><a href="#s2">프레임</a><a href="#s3">왜 우주 ①</a><a href="#s4">왜 우주 ②</a><a href="#s5">Why now ①</a><a href="#s6">Why now ②</a><a href="#s7">발사 병목</a><a href="#s8">트렌드 1</a><a href="#s9">트렌드 2</a><a href="#s10">트렌드 3</a><a href="#s11">주도주</a><a href="#s12">타이밍</a><a href="#s13">리스크</a><a href="#s14">일정</a><a href="#fb">초안 피드백</a></div>
+
+<div class="slide" id="s1"><div class="no">01 · 결론</div><h2>발사가 풀리면 병목은 위성 부품으로 올라간다. 살 것은 SpaceX가 '사 와야 하는' 부품이다.</h2>
+<p class="say">AI 사이클에서 GPU 다음에 HBM·전력·광통신이 올랐듯, 우주에서는 발사체 다음에 위성 부품(태양전지·광 단말·RF)이 온다. 단, SpaceX는 대부분을 내재화했으므로 수혜는 SpaceX 밖(국방·Amazon·동맹국) 수요에 노출된 부품사다.</p>
+<ul>
+<li><b>돈의 방향</b>: 2026년 민간 우주 투자 3분기 누적 925억 달러, 사상 첫 1,000억 달러 전망(Space Capital, 정부 예산 제외).</li>
+<li><b>돈이 닿는 산업</b>: 발사 병목은 Starship 첫 궤도 진입(9.28)과 FAA 456회 평가 개시(10.13)로 풀리기 시작. 다음은 위성 전력·연결·지상 링크.</li>
+<li><b>주도주 조건</b>: 가격결정력 + 수주 가시성 + SpaceX 비의존 + 이익이 이미 나는 곳. 후보는 11장.</li>
+</ul></div>
+
+<div class="slide" id="s2"><div class="no">02 · 프레임</div><h2>AI 사이클을 읽던 3단계를 우주에 그대로 적용한다</h2>
+<div class="tw"><table class="cmp"><tr><th>단계</th><th>AI 사이클(2023~26)</th><th>우주 사이클(2024~)</th></tr>
+<tr><td>① 돈의 방향</td><td>하이퍼스케일러 capex → 연 수천억 달러</td><td>민간 투자 1,000억 달러 전망 + 국방(FY27 우주군 710억·Golden Dome 175억 요청) + SpaceX IPO 750억 조달</td></tr>
+<tr><td>② 돈이 닿는 산업</td><td>GPU → HBM·전력·광통신 등 '외부 조달·증설 느린' 부품</td><td>발사체 → 위성 → 태양전지(III-V·Ge)·광 단말(OCT)·RF GaN 등 '외부 조달·증설 느린' 부품</td></tr>
+<tr><td>③ 이익 지속 주도주</td><td>캐파 묶인 과점(HBM 3사, 광모듈)</td><td>캐파 묶인 과점(III-V 셀 3~4사, SDA 인증 OCT 4사, GaN-on-SiC 2~3사)</td></tr>
+</table></div>
+<p class="say">핵심 차이 하나: AI에서는 Nvidia가 부품을 사 왔지만, 우주에서는 SpaceX가 부품을 직접 만든다. 그래서 '누가 SpaceX 밖에서 팔 수 있나'가 선별 기준이 된다.</p></div>
+
+<div class="slide" id="s3"><div class="no">03 · 왜 우주인가 ①</div><h2>미·중 경쟁이 우주 인프라 투자의 바닥을 깐다</h2>
+<ul>
+<li><b>국방 수요가 앵커</b>: FY27 요청 우주군 710억 달러, Golden Dome 175~179억(대부분 조정법안 의존), SDA 추적위성 16.9억→35.6억 달러. 2026년 실제 발주: SpaceX SB-AMTI 41.6억(5.29), L3Harris·Sierra Space 추적위성 17.5억(7.14).</li>
+<li><b>중국은 미국의 궤적을 따라온다</b>: LandSpace Zhuque-3이 2026-08-19 중국 상업기업 최초로 궤도급 부스터 착륙(국가 전체로는 창정-10B에 이어 두 번째, 재비행은 아직). 国星宇航(ADA Space)은 10.14 '星算' 2조 8기 발사 — 궤도 내 기초모델 훈련·레이저 통신 탑재, 2,800기 계획. 地卫二(STAR.VISION)는 9.25 1,000기 컴퓨팅 성좌 발표.</li>
+<li><b>함의</b>: 재사용 발사체 → 궤도 컴퓨팅 → 레이저 연결까지, 중국이 SpaceX 로드맵을 1~3년 차로 복제 중. AI 모델 경쟁과 같은 그림이며, 미국의 대응은 국방 예산으로 나타난다.</li>
+</ul>
+<div class="src">Breaking Defense 2026.4(FY27) · Via Satellite 2026.7.13 · Engadget 2026.5 · Spaceflight Now 2026.8.19 · 科技日报 2026.10.14 · 杭州网 2026.5</div></div>
+
+<div class="slide" id="s4"><div class="no">04 · 왜 우주인가 ②</div><h2>AI처럼 인프라가 먼저다. 우주의 인프라는 위성이다.</h2>
+<ul>
+<li>AI는 인프라(GPU·DC)가 깔린 뒤에 모델 고도화 → 추론 → 에이전트 서비스가 왔다. 우주도 다운스트림 서비스(EO 분석·D2D·궤도 컴퓨트) 전에 위성 인프라가 먼저 깔려야 한다.</li>
+<li>SpaceX가 그 순서로 돈을 쓴다: S-1 기준 Redmond 공장 주 ~70기 생산, Bastrop 10 GW/yr 태양전지 공장(2026.3 착공, Bloomberg), 궤도 AI DC 100만기 FCC 신청(2026.1), Gen3 250 kW·10 Tbps 위성(Musk 2026.10.1). 2Q26 capex 180억 달러+.</li>
+<li>데이터 flywheel 논리는 피지컬 AI와 같다: 플릿을 돌려야 데이터가 쌓이고, 위성이 많아야 연결·관측 데이터가 쌓인다. 그래서 위성끼리의 연결(ISL)이 AI의 데이터센터 간 연결만큼 중요해진다.</li>
+</ul>
+<p class="say">그래서 처음엔 인프라에 돈이 몰리고, 그 인프라의 핵심인 위성과 그 부품에 집중한다.</p>
+<div class="src">SpaceX S-1(2026.5.20) · Bloomberg 2026.5.21 · SatNews 2026.10.4 · 스터디 07</div></div>
+
+<div class="slide" id="s5"><div class="no">05 · Why now ①</div><h2>돈이 우주로 몰리고 있다. 다만 '전망'과 '실적'을 구분한다.</h2>
+<ul>
+<li><b>투자</b>: Space Capital 3Q26 — 1~3분기 누적 925억 달러, 연간 1,000억 달러 첫 돌파 전망. 유럽 3Q 63억(28%) 사상 최대. 급증의 주요인은 <b>발사 용량 부족과 정부 수요</b>(Falcon 9 라이드셰어 2028년 말 이후까지 예약 마감).</li>
+<li><b>SpaceX IPO</b>: 2026-06-12 나스닥 상장, 공모가 $135, 조달 750억 달러(역대 최대), 시총 1.77조 달러. 이후 6월 고점 $225 → 8월 저점 $108 → 10월 초 $171. 심리를 끌어올린 건 맞지만 '투자 급증을 견인했다'고 단정할 근거는 없다.</li>
+<li><b>Seraphim(VC 집계)</b>: 1Q26 분기 79.5억, 2025년 124억 달러 — 집계 기준이 달라 Space Capital 수치와 섞어 쓰지 않는다.</li>
+</ul>
+<div class="src">Space Capital Space IQ 3Q26(2026.10.13) · Spokesman/Fortune 2026.6.11~12 · 주가는 보도 기준 종가</div></div>
+
+<div class="slide" id="s6"><div class="no">06 · Why now ②</div><h2>수익성은 '섹터 턴어라운드'가 아니라 기업별로 갈린다</h2>
+<div class="tw"><table class="cmp"><tr><th>기업</th><th>최근 수치</th><th>판정</th></tr>
+<tr><td>Rocket Lab</td><td>1Q26 매출 2.003억(+63%)·잔고 22억(5.7) → 2Q26 2.34억(+62%)·잔고 23.6억(8.10), 3Q 신규 수주 10억+. GAAP EPS -$0.08, 영업이익률 -25%</td><td><span class="tag2 t-mid">매출·수주는 실물, 이익은 아직</span></td></tr>
+<tr><td>Planet Labs</td><td>FY26(2026.1 결산) 첫 연간 조정 EBITDA 흑자 $15.5M, FCF $52.9M</td><td><span class="tag2 t-ok">흑자 전환</span></td></tr>
+<tr><td>Satellogic / Spire</td><td>Satellogic 2Q26 첫 영업이익·EBITDA 흑자 / Spire 1Q27 EBITDA 손익분기 가이던스</td><td><span class="tag2 t-ok">전환 중</span></td></tr>
+<tr><td>AST SpaceMobile / Redwire</td><td>2026년에도 적자 전망. AST 매출 3,200만·영업손실 1.72억(2Q26)</td><td><span class="tag2 t-no">적자</span></td></tr>
+<tr><td>부품 과점사</td><td>MACOM 영업이익률 23%, Lumentum 28%, 5N Plus 23%, Karman 19%, Microchip 24%(최근 분기)</td><td><span class="tag2 t-ok">이미 이익</span></td></tr>
+</table></div>
+<p class="say">"우주 기업이 26~27년에 턴어라운드한다"는 단일 리서치 출처를 찾지 못했다. 대신 "수주가 실물이 되는 기업(RKLB)과 이미 이익이 나는 부품사"로 나눠 말한다.</p>
+<div class="src">Rocket Lab 8-K 2026.5.7·IR 2026.8.10 · Planet IR · SatNews 2026.8.12 · Space Intel Report · Yahoo Finance 분기 손익(2026.10.14)</div></div>
+
+<div class="slide" id="s7"><div class="no">07 · 발사 병목이 풀린다</div><h2>Starship이 궤도에 갔고, FAA가 연 456회 평가를 시작했다. 단, 아직 '신청'이다.</h2>
+<ul>
+<li><b>2026-09-28 Flight 14</b>: Starship 첫 궤도 진입, Starlink V3 26기 전량 투입(첫 궤도 페이로드). 엔진 이상으로 10시간 임무는 조기 종료. Flight 15는 10월 말~11월 초(미확정).</li>
+<li><b>2026-10-13 FAA</b>(FCC 아님): Starbase 프로그램 환경영향평가(PEIS) 작성 개시 고지. SpaceX 요청 1단계 연 100회 → 2단계 연 456회 발사/912회 착륙. <b>현행 허가는 연 25회. 승인이 아니라 스코핑 단계</b>, 의견 접수 11.30, 공청회 11.17~19. 플로리다는 별도(39A 연 44회, SLC-37 연 76회).</li>
+<li><b>"페이로드 20배"는 출처 없음.</b> 456÷25 ≈ 18배(허가 횟수 비율) 또는 456회×100 t vs Falcon 연 ~2,500 t ≈ 18배. "신청 기준 최대 18배 수준"으로 말한다.</li>
+<li><b>Space Capital이 투자 급증 요인으로 '발사 용량 부족'을 꼽았다</b>는 점이 중요하다. 그 병목이 풀리면 돈은 다음 병목으로 간다.</li>
+</ul>
+<div class="src">Reuters/TimesLIVE 2026.9.28 · Supercluster · 연방관보 FAA-2026-12808(2026.10.13) · Spectrum News 2026.1.30</div></div>
+
+<div class="slide" id="s8"><div class="no">08 · 트렌드 1</div><h2>AI 추론이 클라우드에서 기기·엣지로 내려온다</h2>
+<div class="two">
+<div class="box"><b>왜 내려오나</b>비용: 수십억 명이 매일 반복하는 추론의 클라우드 왕복은 비싸다 — Phison CEO 潘健成(2026.4) "순수 클라우드는 비용 면에서 맞지 않아 하이브리드가 주류". 지연: 피지컬 AI·자율주행의 반응 시간은 수십 ms. 규제: 의료·금융 데이터는 밖으로 못 나간다(병원 등 200여 기관이 Phison 온프레미스 도입. '첫 고객이 은행·병원'은 확인 못 함).</div>
+<div class="box"><b>기업들의 행동(날짜 정확히)</b>Nvidia → Nokia 10억 달러 지분투자, AI-RAN 공동 개발(<b>2025-10-28</b>). Microsoft Copilot+ PC: NPU 40 TOPS·16GB RAM을 Windows AI 기능 조건으로(<b>2024-05</b>). Apple: 데이터센터 비용·프라이버시 이유로 온디바이스 AI 재강화(The Information 2026.5, WWDC 2026.6 3세대 Foundation Models). ABI Research: 엣지 AI 칩셋 2026년 344억 → 2031년 960억 달러.</div>
+</div>
+<ul><li><b>새 레이어</b>: Nokia가 OCP Global Summit(2026.10.12)에서 'AI Factory → AI Grid', scale up/out/across/<b>beyond</b>를 제시 — 기지국·지역 거점의 분산 GPU로 주변 로봇·차량의 추론을 가까이서 처리하고, "어디서 처리할지 지능적으로 결정"하는 구조(공식 정의 문서는 없음, 세션·데모 수준).</li>
+<li><b>한계</b>: 지상 거점은 지상망 안에서만 있고, 기기마다 넣을 메모리·전력도 제한된다. 지상망 밖을 덮을 중간층이 필요하다.</li></ul>
+<div class="src">udn 2026.4 · IntelligentCIO 2025.10.28 · Windows Latest 2024.5 · AppleInsider 2026.5.28 · ABI Research 2Q26 · Nokia OCP 2026</div></div>
+
+<div class="slide" id="s9"><div class="no">09 · 트렌드 2</div><h2>위성이 '통신 중계기'에서 '연결의 중간층'이 된다</h2>
+<ul>
+<li><b>SpaceX의 베팅</b>: FCC 2026-10-06 Starlink D2D 15,000기 승인(고도 326~335 km, 2035년까지 전량 배치). 주파수에 EchoStar 196억 달러(170억 현금·주식 반반 + 26억 주식, FCC 2026.5 승인) + Grain 800 MHz 약 80억(WSJ 추정, 10.8 발표·FCC 승인 대기) ≈ 276억 달러. 지상 이통사 임대 없이 위성 무선서비스 제공 가능 웨이버(보도).</li>
+<li><b>경쟁자도 같은 방향</b>: Amazon Leo FCC 2026-02-10 4,504기 추가 승인(총 7,727기), Ariane 64로 36기 발사 완료(6.17), 다음 LE-04는 10월 이후. SDA 추적위성 Tranche 3 104기 계약(2025.12 + 2026.7).</li>
+<li><b>경영진 발언(발언자 정확히)</b>: 머스크·숏웰, IPO 후 첫 실적 콜(2026.8.5경) — AI·휴머노이드·차량 로봇으로 대역폭 수요가 훨씬 커질 것, "앞으로 필요한 연결성의 양을 과소평가해 왔다"(요지). <b>CFO Johnsen 발언으로 인용하지 말 것.</b> 모건스탠리 Adam Jonas(2026.10.13): SpaceX 최대 성장 잠재력은 '분산 추론 클라우드'와 'physical AI swarm', 시장은 AI 부문을 주당 ~$12로만 평가(PT $300).</li>
+</ul>
+<p class="say">트렌드 1과 엮으면: 기기 연결의 중간층이 지상에선 기지국(Nvidia→Nokia), 지상 밖에선 위성(SpaceX→주파수 276억)이다.</p>
+<div class="src">Light Reading 2026.10.6 · EchoStar IR · SDxCentral 2026.10 · GeekWire 2026.2.10 · ArianeGroup 2026.6.17 · Via Satellite 2026.7.13 · 모건스탠리 노트 보도(Tiger/ValueTheMarkets)</div></div>
+
+<div class="slide" id="s10"><div class="no">10 · 트렌드 3</div><h2>그럼 병목은? 데이터의 길을 따라가면 세 곳이 나온다</h2>
+<div class="flow"><span>기기 <i>RF</i></span>→<span class="hot">위성 <i>태양전지·전력</i></span>→<span class="hot">레이저 ISL <i>광 단말</i></span>→<span>다른 위성</span>→<span class="hot">지상국 <i>고주파 GaN</i></span>→<span>데이터센터</span></div>
+<div class="tw"><table class="cmp"><tr><th>병목</th><th>수치 근거</th><th>SpaceX 내재화</th><th>판정</th></tr>
+<tr><td>① III-V 태양전지·Ge</td><td>세계 III-V 캐파 ~2 MW/yr vs 신규 궤도 전력 수요 ~20 MW/yr. 250 kW 위성 1기 = 전문업체 연간 출력의 10%+. Azur "maxed-out backlog". 중국 Ge 60%·Ga 99%, 대미 금수 유예 2026-11-27 만료</td><td>실리콘 10 GW 공장으로 우회</td><td><span class="tag2 t-ok">병목 확인(SpaceX 밖)</span></td></tr>
+<tr><td>② 광 단말(OCT)</td><td>GAO-26-107085: T1 5개 계약 전부 다른 단말사, 궤도상 광링크 미입증, 1년 지연. Lockheed 21기는 단말 4→3개로 발사. SDA 국장(2026.4.1) "수량도 처리량도 아직". 인증 벤더 4곳. InP 레이저는 AI 광부품과 같은 팹(Lumentum "2029년까지 완판")</td><td>9,000개+ 자체, 외판은 자기 망 접속용뿐</td><td><span class="tag2 t-ok">병목 확인(SpaceX 밖)</span></td></tr>
+<tr><td>③ 지상 RF GaN</td><td>게이트웨이 240→503(2년 2.1배). Starlink이 Ka 포화를 E/W-band로 해소(영국 E-band 면허, Bastrop 4중 대역). GaN-on-SiC "binding layer", 증설 12~24개월, MACOM SATCOM 램프 FY27</td><td>안테나 자체 제조, GaN은 외부(추정)</td><td><span class="tag2 t-mid">방향 맞으나 좁다</span></td></tr>
+</table></div>
+<p class="say">AI에서 HBM·전력·광통신이 올랐던 이유는 "외부 조달 + 증설이 느림"이었다. 우주에서 그 조건을 만족하는 곳이 위 세 곳이다. 단, SpaceX 외부 공급사로 공개 확인된 곳은 STMicro(Starlink 칩 50억 개+)뿐이며 태양전지·RF·레이저 공급사는 미공개다.</p>
+<div class="src">스터디 07(위성 제조·전력, ISL, 지상 장비) · GAO-26-107085 · SpaceNews 2026.4.2 · SatNews 2026.6.9 · ST–SpaceX 공동 발표 2025.12</div></div>
+
+<div class="slide" id="s11"><div class="no">11 · 주도주</div><h2>이익이 지속될 조건 4개로 거른다: 가격결정력 · 수주 가시성 · SpaceX 비의존 · 이미 흑자</h2>
+<div class="tw"><table class="mx"><tr><th>종목</th><th>병목 노출</th><th>최근 분기 매출 / 영업이익률 / 3분기 매출 증가</th><th>SpaceX 비의존</th><th>판정</th></tr>
+<tr><td class="tk">MACOM<br>MTSI</td><td>③ GaN-on-SiC(Wolfspeed RF 인수), K/Ka 체인</td><td>$342M / <span class="g">23%</span> / +31%</td><td>높음(방산·Satcom 전반)</td><td><span class="tag2 t-ok">1순위 후보</span><br>"FY27 SATCOM 매우 강함"</td></tr>
+<tr><td class="tk">Lumentum<br>LITE</td><td>② InP 레이저(공통 부품)</td><td>$1,006M / <span class="g">28%</span> / +89%</td><td>높음</td><td><span class="tag2 t-mid">AI 수혜가 본체, 우주는 옵션</span></td></tr>
+<tr><td class="tk">5N Plus<br>VNP.TO</td><td>① Azur Space III-V 셀</td><td>$122M / <span class="g">23%</span> / 전년 분기 결측</td><td>높음(SDA·Amazon·유럽)</td><td><span class="tag2 t-ok">가장 좁은 노드의 순수 노출</span><br>세그먼트 비공시</td></tr>
+<tr><td class="tk">Karman<br>KRMN</td><td>구조·SRM 서브티어</td><td>$182M / <span class="g">19%</span> / +49%</td><td>높음</td><td><span class="tag2 t-mid">"캐파 선행" = 병목 아님, 밸류 부담</span></td></tr>
+<tr><td class="tk">Microchip<br>MCHP</td><td>① rad-hard 전력관리</td><td>$1,485M / <span class="g">24%</span> / +30%</td><td>높음</td><td><span class="tag2 t-mid">우주 비중 작음</span></td></tr>
+<tr><td class="tk">Airbus<br>AIR.PA</td><td>② Tesat(OCT 최대 머천트)</td><td>€20.5B / <span class="g">11%</span> / +15%</td><td>높음</td><td><span class="tag2 t-mid">실증·생산 1위이나 비중 미미</span></td></tr>
+<tr><td class="tk">Rocket Lab<br>RKLB</td><td>①② SolAero 셀 + Mynaric 단말 + 버스</td><td>$234M / <span class="b">-25%</span> / +51%</td><td>높음(SDA·Iridium)</td><td><span class="tag2 t-mid">수주는 실물, 이익은 아직. Neutron 2027 연기</span></td></tr>
+<tr><td class="tk">STMicro<br>STM</td><td>SpaceX가 사 오는 유일한 공개 공급사</td><td>$3,487M / <span class="g">6%</span> / +9%</td><td>낮음(SpaceX 의존)</td><td><span class="tag2 t-mid">우주 매출 3년 30억 달러, 전사 비중 작음</span></td></tr>
+<tr><td class="tk">Gilat · 인텔리안<br>GILT · 189300</td><td>③ 게이트웨이 SSPA·안테나</td><td>$123M / 7% / +4% · ₩97bn / 7% / +26%</td><td>높음(비Starlink)</td><td><span class="tag2 t-mid">수요는 Telesat·Amazon에 한정</span></td></tr>
+<tr><td class="tk">IonQ · AST<br>IONQ · ASTS</td><td>② Skyloom / D2D</td><td>-421% · -545% 영업이익률</td><td>—</td><td><span class="tag2 t-no">이익 지속성 조건 미달</span></td></tr>
+</table></div>
+<p class="say">결론: 조건 4개를 다 만족하는 건 MACOM과 5N Plus다. Lumentum·Microchip은 이익은 좋지만 우주가 본체가 아니고, Rocket Lab은 수주·매출은 실물이지만 아직 적자다. 투자 권유가 아니라 선별 기준의 적용 결과다.</p>
+<div class="src">Yahoo Finance 분기 손익(2026.10.14) · 스터디 07 재무표 · 각사 IR</div></div>
+
+<div class="slide" id="s12"><div class="no">12 · 타이밍</div><h2>"연말연초 꿈주 강세"가 아니라 "트리거가 겹칠 때"가 맞다</h2>
+<ul>
+<li><b>계절성은 근거가 없다.</b> UFO·ARKX의 11~2월 계절성 연구는 없고, ARKX 11월→2월은 2022~26 네 번 중 +4.4%, +1.3%, -5.0%, +17.0%(표본 4개). 소형주 산타랠리·1월 효과는 장기 연구가 있지만 테마 ETF에 그대로 적용할 수 없다.</li>
+<li><b>백테스트(스터디 03·04)가 말하는 것</b>: 10년간 13주 +60% 이상 랠리는 2020.11~21.2, 2024.5~25.1, 2025.4~7, 2026.2~5 네 번. 시작은 금리 인하·대선·IPO 기대 같은 거시·수급, 끝은 New Glenn 폭발(2026.5.28)·SpaceX 상장(6.12)·전환사채(7.16) 같은 섹터 내부 사건이었다.</li>
+<li><b>정책 선언은 안 먹히고 단일 수주만 먹힌다</b>: Golden Dome 행정명령·SHIELD $151B는 0~-7%, SDA Tranche 3 단독 $805M은 RKLB +18%. 발사 성공은 당일 -17~+5%, 실패는 -20~-50%(비대칭).</li>
+<li><b>2026년 4~5월 급등은 SpaceX S-1 기대 + 테마 자금</b>이 맞다. 그 뒤 6~8월 조정은 IPO 소화와 New Glenn 사고가 원인이었다.</li>
+</ul>
+<p class="say">그래서 타이밍 논리는 "연말이라서"가 아니라 "3Q 실적(10~11월)에서 수주→매출 전환이 확인되고, Starship Flight 15·FAA 절차·SDA 발주가 겹치면"으로 쓴다.</p>
+<div class="src">스터디 03 백테스트 · 스터디 04 ETF vs 지수 · ARKX 월별 가격(digrin, 미검증)</div></div>
+
+<div class="slide" id="s13"><div class="no">13 · 리스크·반론</div><h2>이 논리가 틀리는 네 가지 경우</h2>
+<div class="two">
+<div class="box"><b>① SpaceX 내재화</b>태양전지(10 GW 실리콘), 레이저(자체), 게이트웨이 안테나(자체). 부품 병목은 SpaceX 밖에서만 터지고, 그 수요(SDA·Golden Dome)는 FY27 예산이 조정법안에 98% 의존한다. 예산 미통과 시 ①②③ 수요가 밀린다.</div>
+<div class="box"><b>② Starship 일정</b>Flight 14는 임무 조기 종료, 456회는 스코핑 단계(ROD 2027 이후), 현행 허가 연 25회. V2 D2D·Gen3·궤도 DC 모두 Starship 고빈도 발사 가정. S-1: 궤도 컴퓨트는 "unproven… may not achieve commercial viability".</div>
+<div class="box"><b>③ 위성은 보완재</b>T-Mobile CEO(2026.5.19) "위성은 총 트래픽의 0.0002%… 보완 용도". AT&T "지상망 부재 ~2%". Starlink ARPU $66(전년 $85). 피지컬 AI의 위성 연결 수요는 머스크 발언 외 공식 확인 없음.</div>
+<div class="box"><b>④ 가격</b>SpaceX 시총 ~2.2조 달러, 모건스탠리조차 AI 부문은 주당 $12로 평가. 우주 ETF는 출시 후 S&P 대비 40~60%p 언더퍼폼. 부품사 중 MACOM·Lumentum은 AI 멀티플이 이미 붙어 있다.</div>
+</div>
+<div class="src">SpaceX S-1 · Breaking Defense 2026.4 · Broadband Breakfast 2026.5.19 · 스터디 07</div></div>
+
+<div class="slide" id="s14"><div class="no">14 · 일정·체크리스트</div><h2>앞으로 6개월, 무엇을 보나</h2>
+<div class="tw"><table class="cmp"><tr><th>시점</th><th>이벤트</th><th>확인할 것</th></tr>
+<tr><td>2026.10 말~11 초</td><td>Starship Flight 15(Pad 2, 날짜 미정)</td><td>궤도 진입 반복 + V3 투입 기수(26 vs 60). 실패 시 -20~-50% 비대칭</td></tr>
+<tr><td>2026.10~11</td><td>3Q 실적: Rocket Lab·MACOM·Qorvo·Gilat·5N Plus·Lumentum / SpaceX 3Q 콜</td><td>수주→매출 전환, SATCOM GaN 가이던스, Azur 증설 가동, Starlink 대기열 지역 수</td></tr>
+<tr><td>2026.10 이후</td><td>Amazon Leo LE-04(Ariane 64, 날짜 미정)</td><td>비Starlink 위성망 속도 = 부품 머천트 수요</td></tr>
+<tr><td>2026.11.17~19 / 11.30</td><td>FAA Starbase PEIS 공청회 / 의견 마감</td><td>456회 일정의 현실성</td></tr>
+<tr><td><b>2026.11.27</b></td><td><b>중국 Ga/Ge 대미 금수 유예 만료</b></td><td>미연장 시 5N Plus·Umicore·AXT 가격·리드타임 즉시 반응</td></tr>
+<tr><td>2026 4Q</td><td>FY27 세출·조정법안 / SDA Tranche 1 광 메시 수립 여부 / Grain 800 MHz FCC 승인</td><td>국방 수요 확정 · 다중벤더 광 단말 첫 입증 · Starlink 독자 이통 경로</td></tr>
+<tr><td>2027</td><td>Rocket Lab Neutron 첫 발사(10.14 발표로 2026 말→2027 연기) / Bastrop 셀 공장 가동 / AST 상용(1H)</td><td>발사 경쟁 · SpaceX 자급 완성 · D2D 경쟁</td></tr>
+</table></div></div>
+
+<h2 id="fb"><span class="n">APPENDIX</span>초안 피드백: 무엇을 왜 고쳤나</h2>
+<div class="tw"><table class="fb"><tr><th>초안</th><th>문제</th><th>수정</th></tr>
+<tr><td>"FCC의 스타쉽 환경성평가로 연 456회 발사 검토"</td><td>기관 오류(FAA). '검토'가 승인처럼 읽힘. 현행 허가 연 25회</td><td>7장: FAA PEIS 스코핑 개시, 승인 아님, 일정 명시</td></tr>
+<tr><td>"엔비디아의 노키아 10억 달러 투자" / "MS가 AI 전용칩 사양 발표"</td><td>각각 2025.10.28, 2024.5 사건. 2026 트렌드 근거로 쓰면 1~2년 오차</td><td>8장: 날짜 명기, '행동의 누적'으로 재배치</td></tr>
+<tr><td>"Neutron 첫 발사가 10/14에서 27년으로 연기"</td><td>10/14은 발표일. 종전 목표는 2026년 말</td><td>14장: "10.14 발표로 2026 말→2027 연기"</td></tr>
+<tr><td>"스페이스X CFO: 휴머노이드·fleet… 항상 연결"</td><td>CFO 발언 기록 없음. 유사 취지는 머스크·숏웰(8월 실적 콜)</td><td>9장: 발언자 교체, '요지'로 표기</td></tr>
+<tr><td>"Zhuque-3이 최초 중국 민간 재사용 발사체" / "중국 Starvision"</td><td>중국 전체 최초 아님(창정-10B 7.10), 재비행 미달성. Starvision은 地卫二와 国星宇航 혼동, 모델·레이저 컨셉은 国星宇航</td><td>3장: 정확한 회사명·순서·날짜</td></tr>
+<tr><td>"26년 투자액 1,000억 달러 돌파" / "SpaceX IPO가 견인"</td><td>'전망'이지 실적 아님(3Q 누적 925억). Space Capital은 발사 용량 부족·정부 수요를 주요인으로 지목</td><td>5장: 전망/실적 구분, 인과 단정 제거</td></tr>
+<tr><td>"수익성이 26~27년 턴어라운드"</td><td>단일 리서치 출처 없음. 기업별로 갈림</td><td>6장: 기업별 표로 교체, 부품 과점사의 '이미 흑자' 강조</td></tr>
+<tr><td>"아마존 Leo Ariane 6 발사 → 36기 추가(연말)"</td><td>36기 발사는 2026.6.17 이미 완료. 다음은 LE-04(10월 이후)</td><td>9·14장 수정</td></tr>
+<tr><td>"총 276억(EchoStar, Glain?)"</td><td>Grain. 80억은 WSJ 추정·FCC 미승인. 276억은 추정치 포함 시에만 성립</td><td>9장: 구성 분해(196억 확정 + ~80억 추정)</td></tr>
+<tr><td>"역사적으로 연말연초 꿈주 강세"</td><td>우주 ETF 계절성 데이터 없음(표본 4개, 부호 혼재). 발표에서 가장 반박당하기 쉬운 문장</td><td>12장: 백테스트의 '트리거 논리'로 교체</td></tr>
+<tr><td>"병목 3곳: RF 반도체, 태양전지 소재, 고출력 레이저"</td><td>방향은 맞음. 다만 근거 수치와 SpaceX 내재화 예외가 없어 '왜 거기냐'에 답 못 함</td><td>10장: 캐파 수치·GAO·SDA 발언 추가, 내재화 열 추가</td></tr>
+<tr><td>제목의 "이익 지속성 갖춘 주도주"</td><td>초안에 선별 기준과 종목이 없음. 제목이 약속한 결론이 비어 있었음</td><td>11장: 기준 4개 + 종목 매트릭스 + 재무 수치</td></tr>
+<tr><td>"우주에서의 데이터는 더욱 값어치가 높음"</td><td>근거 없는 가치 판단. 질문 받으면 답하기 어려움</td><td>4장: 'AI처럼 인프라가 먼저'와 SpaceX capex 순서로 대체</td></tr>
+<tr><td>구조 전반</td><td>'왜 우주'와 'Why now'에 같은 재료(발사 병목, 위성 연결)가 두 번 나옴. 트렌드 1~3이 결론(병목·종목) 없이 끝남</td><td>결론 먼저(1장) → 프레임(2장) → 근거(3~10장) → 종목(11장) → 타이밍·리스크·일정(12~14장)</td></tr>
+</table></div>
+<div class="warn"><b>방법·미확인</b>: 2026년 사건 다수는 FCC·FAA 원문이 아닌 전문 매체 보도로 확인했다. 발표 전 도켓 원문 링크 추가 권장. 미확인: Space Capital 2012~26 연도별 시계열, Neutron 연기 사유 원문, 머스크·숏웰 8월 콜 원문, SpaceX 외부 태양전지·RF·레이저 공급사, Phison '첫 고객 은행·병원', Nokia 'AI Grid' 공식 정의, ARKX 계절성(미검증 산술). 재무는 Yahoo Finance 분기 손익(2026.10.14). 투자 권유가 아닌 학습용 정리.</div>
+</main>
+<footer>기준일 2026-10-16.</footer>
+</body></html>
